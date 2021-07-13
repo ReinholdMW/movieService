@@ -13,19 +13,19 @@ public class QuizDto {
 	public String answer;
 	public Set<String> choices; 
 	
-	private void createYearQuestion(Movie movie, Set<String> choices) {
+	public void createYearQuestion(Movie movie, Set<String> choices) {
 		this.question = "What year did " + movie.getTitle() + "release to theaters?";
 		this.answer = movie.getReleaseDate();
 		this.choices = choices;
 	}
 	
-	private void createActorQuestion(Movie movie, Set<String> choices) {
+	public void createActorQuestion(Movie movie, Set<String> choices) {
 		this.question = "Who played the leading roll in" + movie.getTitle() + "?";
 		this.answer = movie.getActor();
 		this.choices = choices;
 	}
 	
-	private void createActorDirectorQuestion(Movie movie, Set<String> choices) {
+	public void createDirectorQuestion(Movie movie, Set<String> choices) {
 		this.question = "Who directed the film" + movie.getTitle() + "?";
 		this.answer = movie.getDirector();
 		this.choices = choices;

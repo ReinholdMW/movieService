@@ -16,7 +16,7 @@ public class QuizController {
 	}
 	
 	//get to create a quiz for a specific year
-	Response createYearQuiz(Integer year) {
+	Response createYearQuiz(String year) {
 		
 	}
 }
